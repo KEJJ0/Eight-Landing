@@ -2109,3 +2109,30 @@
     right: 0;
   }
 }
+
+html, body {
+  background: transparent !important;
+}
+
+iframe {
+  background: transparent !important;
+  border: 0 !important;
+  display: block;
+}
+
+/* أي iframe خاص باللانيارد */
+.nav-lanyard,
+.nav-lanyard iframe {
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+/* إجبار الشفافية على أي canvas (Three.js) */
+canvas {
+  background: transparent !important;
+}
+
+/* منع أي لون افتراضي من المتصفح */
+iframe::backdrop {
+  background: transparent !important;
+}
